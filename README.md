@@ -9,8 +9,8 @@
 ```
 git clone https://github.com/ddetox/middleman-dev.git
 cd middleman-dev
-docker-compose up &
-docker attach middleman-dev # run at another tab after you see "Attaching" message in the prompt
+sh mitmproxy.sh
+sh mitmdump.sh
 ```
 
 ## Submit Filters
