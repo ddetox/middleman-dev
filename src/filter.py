@@ -5,3 +5,4 @@ def response(flow):
 
         f = open('/src/setting.json', 'r')
         setting = json.load(f)
+        setting
