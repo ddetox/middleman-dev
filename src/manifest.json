@@ -1,0 +1,58 @@
+{
+  "compatibles": ["desktop_web", "mobile_web"],
+  "title_ja": "Google検索のページにちょっとした悪戯を施します",
+  "description_ja": "グーグルのロゴをMiddlemanのロゴと入れ替えたり、I'm feeling Luckyなどのボタンの文字を変更します",
+  "title_en": "Play a bit of prank with google.com",
+  "description_en": "Replace Google Logo with Middleman Logo, change words on the buttons like `I'm feeling Lucky`",
+  "settingSchema": {
+    "items": [
+      {
+        "name": "google_search",
+        "type": "text",
+        "default": "Go to Library",
+        "label_ja": "Google検索",
+        "description_ja": "「Google検索」の文字列を任意の文字列に変更します。",
+        "label_en": "Google Search",
+        "description_en": "Change words of `Google Search` as you want."
+      },
+      {
+        "name": "im_feeling_lucky",
+        "type": "select",
+        "default": "I'm Feeling Unlucky",
+        "label_ja": "I'm Feeling Lucky",
+        "description_ja": "I'm Feeling Luckyの文字を選択式で変更します",
+        "label_en": "I'm Feeling Lucky",
+        "description_en": "Change words of `I'm Feeling Luckyの文字を選択式で変更します` by selection",
+        "values": [
+          {
+            "label_ja": "アンラッキー",
+            "label_en": "Unlucky",
+            "value": "I'm Feeling Unlucky"
+          },
+          {
+            "label_ja": "悲しい",
+            "label_en": "Sad",
+            "value": "I'm Feeling Sad"
+          },
+          {
+            "label_ja": "クレイジー",
+            "label_en": "Crazy",
+            "value": "I'm Feeling Crazy"
+          }
+        ]
+      },
+      {
+        "name": "replace_logo",
+        "type": "checkbox",
+        "default": ["on"],
+        "label_ja": "ロゴの変更",
+        "description_ja": "GoogleのロゴをMiddlemanのロゴに変更します",
+        "label_en": "Replace Logo",
+        "description_en": "Replace Google Logo with Middleman Logo",
+        "values": [
+          { "label_ja": "変更する", "label_en": "変更する", "value": "on" }
+        ]
+      }
+    ]
+  }
+}

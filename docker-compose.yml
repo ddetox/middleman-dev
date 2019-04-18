@@ -1,0 +1,13 @@
+version: "3"
+services:
+  middleman_dev:
+    image: mitmproxy/mitmproxy
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./certs:/home/mitmproxy/.mitmproxy
+      - ./src:/src
+    entrypoint: '/bin/sh -c "stty rows 24 cols 80 && mitmdump -p 8080 -s /src/filter.py"'
+    tty: true
+    stdin_open: true
+    container_name: middleman-dev
