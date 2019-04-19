@@ -2,7 +2,7 @@
 
 ## Assumption
 
-- Middleman is based on mitmproxy. Take a glance at https://docs.mitmproxy.org/stable/
+Middleman is based on mitmproxy. Take a glance at https://docs.mitmproxy.org/stable/
 
 ## Setup
 
@@ -10,8 +10,20 @@
 git clone https://github.com/ddetox/middleman-dev.git
 cd middleman-dev
 sh mitmproxy.sh
-sh mitmdump.sh
 ```
+
+`sh mitmdump.sh` is also available for development.
+
+## install your root certificate
+
+```
+open certs/mitmproxy-ca.pem
+```
+
+## setup proxy
+
+- host:localhost
+- port:8080
 
 ## Submit Filters
 
