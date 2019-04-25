@@ -1,1 +1,1 @@
-SETTING_PATH = '/src/filter_setting.json'
+data_path = '/src/filter_setting.json'

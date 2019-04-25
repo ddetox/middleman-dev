@@ -3,10 +3,10 @@ def response(flow):
     if flow.request.host.startswith('www.google.com'):
         import json
         import re
-        from setting import SETTING_PATH
+        import setting
 
         # import setting
-        f = open(SETTING_PATH, 'r')
+        f = open(setting.data_path, 'r')
         setting = json.load(f)
 
         # pre processing
