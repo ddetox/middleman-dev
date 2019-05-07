@@ -29,3 +29,24 @@ def response(flow):
         # post processing
         bytes = modified.encode('utf-8')
         flow.response.content = bytes
+
+# for script injection
+# def response(flow):
+#     if flow.request.host in ["www.facebook.com", "m.facebook.com"]:
+#         import json
+
+#         # pre processing
+#         data_byte = flow.response.content
+#         data_str = data_byte.decode('utf-8-sig')
+
+#         from . import const
+#         f = open(const.INJECTION_PATH, 'r')
+#         content = f.read()
+#         f.close()
+#         injection = '<script>' + content + '</script>'
+
+#         modified = data_str.replace('</head>', injection + '</head>')
+
+#         # post processing
+#         data_bytes = modified.encode('utf-8')
+#         flow.response.content = data_bytes
