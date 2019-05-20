@@ -1,9 +1,5 @@
 {
-  "compatibles": ["desktop_web", "mobile_web"],
-  "title_ja": "Google検索のページにちょっとした悪戯を施します",
-  "description_ja": "グーグルのロゴをMiddlemanのロゴと入れ替えたり、I'm feeling Luckyなどのボタンの文字を変更します",
-  "title_en": "Play a bit of prank with google.com",
-  "description_en": "Replace Google Logo with Middleman Logo, change words on the buttons like `I'm feeling Lucky`",
+  "matches": ["www.google.*"],
   "settingSchema": {
     "items": [
       {
